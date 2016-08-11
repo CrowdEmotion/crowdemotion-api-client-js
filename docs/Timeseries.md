@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **endIndex** | **Integer** |  | 
 **stepSize** | **Integer** |  | 
 **customMessage** | **String** |  | 
-**data** | **[Integer]** |  | 
+**data** | **[Number]** |  | 
 
 

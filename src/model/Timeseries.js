@@ -59,7 +59,7 @@
    * @param endIndex {Integer} 
    * @param stepSize {Integer} 
    * @param customMessage {String} 
-   * @param data {Array.<Integer>} 
+   * @param data {Array.<Number>} 
    */
   var exports = function(responseId, metricId, metricName, startIndex, endIndex, stepSize, customMessage, data) {
     var _this = this;
@@ -107,7 +107,7 @@
         obj['customMessage'] = ApiClient.convertToType(data['customMessage'], 'String');
       }
       if (data.hasOwnProperty('data')) {
-        obj['data'] = ApiClient.convertToType(data['data'], ['Integer']);
+        obj['data'] = ApiClient.convertToType(data['data'], ['Number']);
       }
     }
     return obj;
@@ -149,7 +149,7 @@
    */
   exports.prototype['customMessage'] = undefined;
   /**
-   * @member {Array.<Integer>} data
+   * @member {Array.<Number>} data
    */
   exports.prototype['data'] = undefined;
 
